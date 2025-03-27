@@ -16,15 +16,15 @@ const Index = () => {
         <Hero />
         <SchedulePreview />
         
-        {/* Interactive Forms Section */}
+        {/* Seção de Formulários Interativos */}
         <section className="py-20">
           <div className="container px-4 mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-radio-black mb-4">
-                Connect With Us
+                Entre em Contato
               </h2>
               <p className="text-radio-gray-700">
-                We love hearing from our listeners! Request a song or share a prayer need with our community.
+                Adoramos ouvir nossos ouvintes! Peça uma música ou compartilhe um pedido de oração com nossa comunidade.
               </p>
             </div>
             
