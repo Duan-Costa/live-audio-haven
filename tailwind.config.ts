@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				radio: {
+					'blue': '#0EA5E9',
+					'light-blue': '#38BDF8',
+					'dark-blue': '#0284C7',
+					'black': '#1A1F2C',
+					'white': '#FFFFFF',
+					'gray-100': '#F1F5F9',
+					'gray-200': '#E2E8F0',
+					'gray-300': '#CBD5E1',
+					'gray-700': '#334155',
+					'gray-800': '#1E293B',
 				}
 			},
 			borderRadius: {
@@ -84,11 +97,62 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'pulse-slow': {
+					'0%, 100%': { 
+						opacity: '1' 
+					},
+					'50%': { 
+						opacity: '0.8' 
+					}
+				},
+				'fade-in': {
+					'0%': { 
+						opacity: '0', 
+						transform: 'translateY(10px)' 
+					},
+					'100%': { 
+						opacity: '1', 
+						transform: 'translateY(0)' 
+					},
+				},
+				'fade-in-right': {
+					'0%': { 
+						opacity: '0', 
+						transform: 'translateX(-20px)' 
+					},
+					'100%': { 
+						opacity: '1', 
+						transform: 'translateX(0)' 
+					},
+				},
+				'wave': {
+					'0%': { 
+						transform: 'scaleY(1)' 
+					},
+					'50%': { 
+						transform: 'scaleY(0.6)' 
+					},
+					'100%': { 
+						transform: 'scaleY(1)' 
+					},
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'pulse-slow': 'pulse-slow 3s ease-in-out infinite',
+				'fade-in': 'fade-in 0.7s ease-out',
+				'fade-in-right': 'fade-in-right 0.7s ease-out',
+				'wave-1': 'wave 1s ease-in-out infinite',
+				'wave-2': 'wave 1.2s ease-in-out infinite 0.1s',
+				'wave-3': 'wave 1.3s ease-in-out infinite 0.2s',
+				'wave-4': 'wave 1.4s ease-in-out infinite 0.3s',
+				'wave-5': 'wave 1.5s ease-in-out infinite 0.4s',
+			},
+			transitionProperty: {
+				'height': 'height',
+				'spacing': 'margin, padding',
 			}
 		}
 	},
